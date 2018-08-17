@@ -162,7 +162,7 @@ do_configure () {
 	linux-mips*)
 		target=debian-mips
 		;;
-	linux-microblaze*|linux-nios2*|linux-gnu*ilp32**)
+	linux-microblaze* | linux-nios2* | linux-gnu*ilp32**)
 		target=linux-generic32
 		;;
 	linux-powerpc)
@@ -177,10 +177,7 @@ do_configure () {
 	linux-riscv64)
 		target=linux-generic64
 		;;
-	linux-supersparc)
-		target=linux-sparcv8
-		;;
-	linux-sparc)
+	linux-sparc | linux-supersparc)
 		target=linux-sparcv8
 		;;
 	esac
