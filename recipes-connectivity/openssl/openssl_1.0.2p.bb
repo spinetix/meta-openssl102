@@ -11,8 +11,6 @@ LIC_FILES_CHKSUM = "file://LICENSE;md5=f475368924827d06d4b416111c8bdb77"
 DEPENDS = "hostperl-runtime-native"
 DEPENDS_append_class-target = " openssl-native"
 
-PROVIDES += "openssl10"
-
 SRC_URI = "http://www.openssl.org/source/openssl-${PV}.tar.gz \
            file://run-ptest \
            file://openssl-c_rehash.sh \
@@ -247,16 +245,6 @@ do_install () {
 	ln -sf ${sysconfdir}/ssl/certs ${D}${libdir}/ssl/certs
 	ln -sf ${sysconfdir}/ssl/private ${D}${libdir}/ssl/private
 	ln -sf ${sysconfdir}/ssl/openssl.cnf ${D}${libdir}/ssl/openssl.cnf
-
-	# Rename man pages to prefix openssl10-*
-	for f in `find ${D}${mandir} -type f`; do
-	    mv $f $(dirname $f)/openssl10-$(basename $f)
-	done
-	for f in `find ${D}${mandir} -type l`; do
-	    ln_f=`readlink $f`
-	    rm -f $f
-	    ln -s openssl10-$ln_f $(dirname $f)/openssl10-$(basename $f)
-	done
 }
 
 do_install_ptest () {
