@@ -1,14 +1,29 @@
 meta-openssl102
 ===============
 
-This layer provides the older OpenSSL 1.0.2.  This alternative version can be used as the
-default OpenSSL if the older version is required for some reason.
+This layer provides the older OpenSSL 1.0.2.  This alternative version 
+can be used as the default OpenSSL if the older version is required for 
+some reason.
 
-This alternative version is derived from openembedded-core prior to it's removal.
+This alternative version is derived from openembedded-core prior to it's 
+removal.
+
 
 Dependencies
 ------------
 This layer depends on OpenEmbedded-core (meta) layers.
+
+
+Usage
+-----
+To enable this version you can add the following to your local.conf or
+distribution file:
+
+  PREFERRED_VERSION_openssl = '1.0.2%'
+
+If you have template processing enabled, add to WRTEMPLATE feature/openssl102:
+
+  WRTEMPLATE = "feautre/openssl102"
 
 
 Maintenance
@@ -20,9 +35,10 @@ information on submitting changes.
 
 Notes
 -----
-Unlike many layers, maintenance for this layer will always move to the latest OpenSSL 1.0.2
-version.  If the community does not have necessary fixes available, then patches will be
-added to whatever the latest release version is.
+Unlike many layers, maintenance for this layer will always move to the 
+latest OpenSSL 1.0.2 version.  If the community does not have necessary 
+fixes available, then patches will be added to whatever the latest 
+release version is.
 
 
 License
