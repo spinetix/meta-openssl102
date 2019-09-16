@@ -21,16 +21,19 @@ distribution file:
 
   PREFERRED_VERSION_openssl = '1.0.2%'
 
-If you have template processing enabled, add to WRTEMPLATE feature/openssl102:
+or if you have the wr-template layer, add to WRTEMPLATE feature/openssl102:
 
-  WRTEMPLATE = "feautre/openssl102"
+  WRTEMPLATE = "feature/openssl102"
+
+or use the template without wr-templarte, add to your local.conf:
+
+  include <path_to_layer>/templates/feature/openssl102/template.conf
 
 
 Maintenance
 -----------
-This layer is maintained by Wind River Systems, Inc.
-Contact <support@windriver.com> or your support representative for more
-information on submitting changes.
+Please see the MAINTAINERS file for information on contacting the maintainers
+of this layer, as well as instructions for submitting patches.
 
 
 Notes
