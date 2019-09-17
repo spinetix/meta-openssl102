@@ -53,8 +53,8 @@ SRC_URI_append_class-nativesdk = " \
            file://environment.d-openssl.sh \
            "
 
-SRC_URI[md5sum] = "98ec4e085962689b91d25e1dcdfc14a2"
-SRC_URI[sha256sum] = "cabd5c9492825ce5bd23f3c3aeed6a97f8142f606d893df216411f07d1abab96"
+SRC_URI[md5sum] = "ef66581b80f06eae42f5268bc0b50c6d"
+SRC_URI[sha256sum] = "14cb464efe7ac6b54799b34456bd69558a749a4931ecfd9cf9f71d7881cac7bc"
 
 S = "${WORKDIR}/openssl-${PV}"
 
