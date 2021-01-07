@@ -42,6 +42,12 @@ SRC_URI = "http://www.openssl.org/source/openssl-${PV}.tar.gz \
            file://0001-allow-manpages-to-be-disabled.patch \
            file://0001-Fix-BN_LLONG-breakage.patch \
            file://0001-Fix-DES_LONG-breakage.patch \
+           file://CVE-2020-1968.patch \
+           file://CVE-2020-1971-1.patch \
+           file://CVE-2020-1971-2.patch \
+           file://CVE-2020-1971-3.patch \
+           file://CVE-2020-1971-4.patch \
+           file://CVE-2020-1971-5.patch \
            "
 
 SRC_URI_append_class-target = " \
