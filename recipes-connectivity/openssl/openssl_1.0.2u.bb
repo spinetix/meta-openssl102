@@ -48,6 +48,10 @@ SRC_URI = "http://www.openssl.org/source/openssl-${PV}.tar.gz \
            file://CVE-2020-1971-3.patch \
            file://CVE-2020-1971-4.patch \
            file://CVE-2020-1971-5.patch \
+           file://CVE-2021-23839.patch \
+           file://CVE-2021-23840-pre2.patch \
+           file://CVE-2021-23840.patch \
+           file://CVE-2021-23841.patch \
            "
 
 SRC_URI_append_class-target = " \

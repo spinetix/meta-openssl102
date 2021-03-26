@@ -5,11 +5,11 @@ Upstream-Status: Inappropriate [OE specific]
 
 Signed-off-by: Juro Bystricky <juro.bystricky@intel.com>
 
---- Makefile	2018-03-06 14:50:18.342138147 -0800
-+++ Makefile	2018-03-06 15:24:04.794239071 -0800
---- a/crypto/Makefile
-+++ b/crypto/Makefile
-@@ -55,7 +55,7 @@
+Index: openssl-1.0.2u/crypto/Makefile
+===================================================================
+--- openssl-1.0.2u.orig/crypto/Makefile
++++ openssl-1.0.2u/crypto/Makefile
+@@ -57,7 +57,7 @@ top:
  all: shared
  
  buildinf.h: ../Makefile
